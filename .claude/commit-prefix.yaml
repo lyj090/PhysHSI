@@ -1,0 +1,21 @@
+# Ownership prefix — PhysHSI
+# 路径相对本仓库根；顺序靠前的规则优先匹配。
+
+prefixes:
+  - tag: "(docs)"
+    description: "复现文档与报告"
+    paths:
+      - "docs/**"
+      - ".claude/**"
+
+  - tag: "(tools)"
+    description: "辅助脚本"
+    paths:
+      - "legged_gym/extract_report.py"
+
+  - tag: "(legged_gym)"
+    description: "训练框架代码"
+    paths:
+      - "legged_gym/**"
+
+default_tag: ""

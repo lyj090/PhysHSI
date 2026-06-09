@@ -150,9 +150,10 @@ class TaskRegistry():
         resume = train_cfg.runner.resume
         if resume:
             # load previously trained model
-            resume_path = train_cfg.runner.resume_path.format(LEGGED_GYM_ROOT_DIR=LEGGED_GYM_ROOT_DIR)
-            print(f"Loading model from: {resume_path}")
-            runner.load(resume_path)
+            if train_cfg.runner.resume_path is not None:
+                resume_path = train_cfg.runner.resume_path.format(LEGGED_GYM_ROOT_DIR=LEGGED_GYM_ROOT_DIR)
+                print(f"Loading model from: {resume_path}")
+                runner.load(resume_path)
         return runner, train_cfg
 
 
