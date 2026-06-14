@@ -3,7 +3,7 @@ import numpy as np
 
 class G1Cfg(LeggedRobotCfg):
     class env(LeggedRobotCfg.env):
-        num_envs = 4096
+        num_envs = 1024
         
         num_actions = 29 # number of actuators on robot
         num_dofs = 29
@@ -169,7 +169,7 @@ class G1Cfg(LeggedRobotCfg):
             hybrid_init_prob = 0.8  # prob of random, for hybrid mode
 
             skill = ["loco", "pickUp", "carryWith", "putDown"]
-            skill_init_prob = [0.8, 0.2, 0.2, 0.0]
+            skill_init_prob = [0.4, 0.1, 0.2, 0.3]
 
             box_termination = False
             min_tar_dist = 0.5
@@ -248,7 +248,7 @@ class G1Cfg(LeggedRobotCfg):
             ## task rewards
             walk_task = 1.0
             carryup_task = 1.0
-            relocation_task = 1.0
+            relocation_task = 1.5
             standup_task = 0.2
 
         # walk
@@ -267,7 +267,7 @@ class G1Cfg(LeggedRobotCfg):
         robot2goal_pos = 0.0
         robot2goal_vel = 1.0
         object2goal_pos = 1.0
-        put_box = 1.0
+        put_box = 2.0
 
         # standup
         base_height = 0.0
