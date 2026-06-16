@@ -71,3 +71,5 @@ isaacgym
 # other
 *.egg-info
 __pycache__
+# Local AI artifacts — research/ + design/ tracked; reports/ is scratch (see ~/.claude/CLAUDE.md)
+.ai/reports/
