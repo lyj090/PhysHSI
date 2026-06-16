@@ -165,11 +165,11 @@ class G1Cfg(LeggedRobotCfg):
             density_range = [10.0, 100.0]
             density_default = 50.0
 
-            reset_mode = 'hybrid' # 'default', 'random', 'hybrid'
+            reset_mode = 'default' # 'default', 'random', 'hybrid'
             hybrid_init_prob = 0.8  # prob of random, for hybrid mode
 
             skill = ["loco", "pickUp", "carryWith", "putDown"]
-            skill_init_prob = [0.4, 0.1, 0.2, 0.3]
+            skill_init_prob = [1.0, 0.0, 0.0, 0.0]
 
             box_termination = False
             min_tar_dist = 0.5
