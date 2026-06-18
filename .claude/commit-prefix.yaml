@@ -7,6 +7,7 @@ prefixes:
     paths:
       - "docs/**"
       - ".claude/**"
+      - "notes/**"
 
   - tag: "(tools)"
     description: "辅助脚本"
