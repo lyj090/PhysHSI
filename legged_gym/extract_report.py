@@ -15,9 +15,9 @@ def get_latest_log_dir(base_dir):
 
 def main():
     # 路径配置
-    project_root = "/home/mzy/rl_ws/PhysHSI"
+    project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     logs_base = os.path.join(project_root, "legged_gym/logs")
-    export_dir = os.path.join(project_root, "docs/reproduction/sitdown/logs")
+    export_dir = os.path.join(project_root, "docs/logs")
     
     if not os.path.exists(export_dir):
         os.makedirs(export_dir)

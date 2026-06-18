@@ -33,7 +33,7 @@
 - **查看实时曲线**：
   ```bash
   python3 legged_gym/extract_report.py
-  tensorboard --logdir=docs/reproduction/sitdown/logs
+  tensorboard --logdir=docs/logs
   ```
 - **重点关注指标**：`rew_relocation_task` 和 `rew_put_box`。当这两个指标出现阶梯式上升时，即宣告第二阶段成功。
 

@@ -33,11 +33,11 @@
 
 我们提取了训练过程中的 TensorBoard 日志，以便对训练曲线进行详细审计。日志已剔除巨大的 `.pt` 权重文件，仅保留数据面板所需信息。
 
-- **日志存放路径**: `docs/reproduction/sitdown/logs/`
+- **日志存放路径**: `docs/logs/`
 - **本地查看方法**:
   在项目根目录下（即 `PhysHSI/` 目录）执行以下指令，即可开启可视化面板：
   ```bash
-  tensorboard --logdir=docs/reproduction/sitdown/logs
+  tensorboard --logdir=docs/logs
   ```
   *(注：启动后在浏览器访问输出的 http://localhost:6006 即可查看)*
 
